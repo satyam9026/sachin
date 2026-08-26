@@ -1,15 +1,8 @@
 
 
-
-
 <!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>SHIVI AD ANGENCY</title>
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
-<!-- Meta Pixel Code -->
+<html lang="en"><head>
+ <!-- Meta Pixel Code -->
 <script>
 !function(f,b,e,v,n,t,s)
 {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
@@ -26,160 +19,353 @@ fbq('track', 'PageView');
 src="https://www.facebook.com/tr?id=2072155633417319&ev=PageView&noscript=1"
 /></noscript>
 <!-- End Meta Pixel Code -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Shiviad™️ - Telegram</title>
+<link rel="icon" href="https://telegram.org/favicon.ico">
 <style>
-  body {
-    margin: 0;
-    padding: 0;
-    font-family: 'Poppins', sans-serif;
-    background-color: #000;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100vh;
-  }
-
-  .card {
-    width: 85%;
-    max-width: 340px; 
-    background: #010a0f;
-    border: 1.5px solid #00d2ff;
-    border-radius: 35px;
-    padding: 20px 15px;
-    text-align: center;
-    box-shadow: 0 0 25px rgba(0, 210, 255, 0.15);
-  }
-
-  .profile-img {
-    width: 110px;
-    height: 110px;
-    border-radius: 50%;
-    border: 3px solid #00d2ff;
-    object-fit: cover;
-    margin-top: -5px;
-    box-shadow: 0 0 15px #00d2ff;
-  }
-
-  h1 {
-    color: #fff;
-    font-size: 20px;
-    margin: 15px 0;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-  }
-
-  .features {
-    text-align: left;
-    margin: 0 auto;
-    width: 90%;
-  }
-
-  .feature-item {
-    color: #ccc;
-    font-size: 13px;
-    padding: 10px 0;
-    border-bottom: 1px solid rgba(255, 255, 255, 0.08);
-    display: flex;
-    align-items: center;
-  }
-
-  .feature-item:last-child { border-bottom: none; }
-
-  .icon { margin-right: 12px; font-size: 16px; }
-
-  .join-text {
-    color: #eee;
-    font-size: 12px;
-    margin: 20px 0 12px;
-    font-weight: 300;
-  }
-
-  .telegram-btn {
-    display: block;
-    background: linear-gradient(90deg, #00d2ff 0%, #9247ff 100%);
-    color: white;
-    text-decoration: none;
-    padding: 14px;
-    border-radius: 50px;
-    font-weight: bold;
-    font-size: 16px;
-    margin-bottom: 15px;
-    box-shadow: 0 4px 12px rgba(0, 210, 255, 0.3);
-  }
-
-  .hindi-quote {
-    color: #bbb;
-    font-size: 13px;
-    margin-bottom: 20px;
-    line-height: 1.4;
-  }
-
-  .footer-box {
-    border: 1px solid rgba(0, 210, 255, 0.2);
-    border-radius: 12px;
-    padding: 8px;
-    font-size: 11px;
-    color: #888;
-  }
-
-  /* Link styling for Agency */
-  .footer-box a { 
-    color: #00d2ff; 
-    font-weight: bold; 
-    text-decoration: none;
-  }
-
-  .disclaimer {
-    font-size: 9px;
-    color: #444;
-    margin-top: 12px;
-  }
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,'Helvetica Neue',Arial,sans-serif;
+  min-height:100vh;
+  background:url('bg.webp') center/cover no-repeat fixed;
+  position:relative;
+  overflow-x:hidden;
+}
+.header{
+  position:fixed;top:0;left:0;right:0;
+  height:54px;
+  background:rgba(255,255,255,0.97);
+  border-bottom:1px solid rgba(0,0,0,0.08);
+  display:flex;align-items:center;justify-content:space-between;
+  padding:0 16px;
+  z-index:100;
+  backdrop-filter:blur(10px);
+}
+.header-logo{
+  display:flex;align-items:center;gap:8px;
+  text-decoration:none;color:#2AABEE;
+  font-size:20px;font-weight:700;
+  letter-spacing:-0.3px;
+}
+.header-logo svg{width:28px;height:28px}
+.download-btn{
+  background:#2AABEE;color:#fff;
+  border:none;border-radius:6px;
+  padding:8px 16px;
+  font-size:13px;font-weight:600;
+  text-decoration:none;
+  letter-spacing:0.3px;
+  cursor:pointer;
+  transition:background 0.2s;
+  text-transform:uppercase;
+}
+.download-btn:hover{background:#229ED9}
+.main{
+  display:flex;flex-direction:column;align-items:center;justify-content:flex-start;
+  min-height:100vh;
+  padding:90px 20px 40px;
+  position:relative;z-index:1;
+}
+.card{
+  background:#fff;
+  border-radius:16px;
+  padding:40px 36px 36px;
+  max-width:420px;
+  width:100%;
+  text-align:center;
+  box-shadow:0 2px 24px rgba(0,0,0,0.08),0 0 1px rgba(0,0,0,0.1);
+}
+.avatar{
+  width:110px;height:110px;
+  border-radius:50%;
+  object-fit:cover;
+  margin:0 auto 18px;
+  display:block;
+}
+.avatar-placeholder{
+  background:linear-gradient(135deg,#2AABEE,#229ED9);
+  color:#fff;
+  font-size:44px;font-weight:600;
+  display:flex;align-items:center;justify-content:center;
+  margin:0 auto 18px;
+}
+.channel-name{
+  font-size:22px;font-weight:700;
+  color:#222;margin-bottom:6px;
+  line-height:1.3;
+}
+.members{
+  font-size:14px;color:#999;
+  margin-bottom:16px;
+}
+.description{
+  font-size:14px;line-height:1.5;
+  color:#555;
+  margin-bottom:28px;
+  white-space:pre-line;
+  word-break:break-word;
+}
+.cta-btn{
+  display:block;
+  width:100%;
+  background:#2AABEE;color:#fff;
+  border:none;border-radius:10px;
+  padding:14px 24px;
+  font-size:15px;font-weight:600;
+  text-decoration:none;
+  cursor:pointer;
+  transition:background 0.2s;
+  letter-spacing:0.5px;
+  text-transform:uppercase;
+}
+.cta-btn:hover{background:#229ED9}
+.powered-by{
+  position:fixed;bottom:14px;right:14px;
+  display:inline-flex;align-items:center;gap:6px;
+  background:#0f172a;color:#fff;
+  padding:5px 10px 5px 5px;
+  border-radius:999px;
+  font-size:11px;font-weight:500;
+  text-decoration:none;
+  letter-spacing:0.2px;
+  box-shadow:0 4px 14px rgba(0,0,0,0.25);
+  z-index:50;
+  transition:background 0.2s, transform 0.2s;
+}
+.powered-by:hover{background:#1e293b;transform:translateY(-1px)}
+.powered-by .pb-logo{width:20px;height:20px;border-radius:50%;display:block;object-fit:cover;background:#fff;flex-shrink:0}
+.powered-by .pb-text{display:flex;flex-direction:column;line-height:1.05;text-align:left}
+  .powered-by .pb-top{font-size:8px;font-weight:400;opacity:0.7;letter-spacing:0.3px;text-transform:uppercase}
+  .powered-by .pb-name{font-size:12px;font-weight:700;letter-spacing:0.1px}
+  .powered-by .pb-arrow{font-size:12px;opacity:0.85;line-height:1;margin-left:2px}
+.ads-managed-by{display:table;margin:10px auto 0;font-size:8px;color:rgba(0,0,0,0.6);font-family:-apple-system,BlinkMacSystemFont,'Segoe UI',Roboto,sans-serif;letter-spacing:0.2px;white-space:nowrap;padding:3px 8px;background:rgba(255,255,255,0.85);border-radius:999px;backdrop-filter:blur(6px);box-shadow:0 1px 3px rgba(0,0,0,0.06);max-width:90vw;overflow:hidden;text-overflow:ellipsis}
+  .ads-managed-by span{color:#0f172a;font-weight:600;text-decoration:none}
+  .ads-managed-by a{color:#2AABEE;font-weight:700;text-decoration:none}
+  .ads-managed-by a:hover{text-decoration:underline}
+  
+@media(max-width:480px){
+  body{background-size:cover}
+  .card{padding:32px 24px 28px;border-radius:12px}
+  .avatar{width:90px;height:90px}
+  .avatar-placeholder{font-size:36px;width:90px;height:90px}
+  .channel-name{font-size:19px}
+  .header{padding:0 12px}
+  .download-btn{padding:7px 12px;font-size:12px}
+  .powered-by{font-size:10px;padding:4px 9px 4px 4px;bottom:10px;right:10px}
+  .powered-by .pb-logo{width:18px;height:18px}.powered-by .pb-top{font-size:7px}.powered-by .pb-name{font-size:11px}
+  .ads-managed-by{font-size:8px;padding:3px 8px;margin:8px auto 0}
+}
 </style>
 </head>
+
 <body>
 
-<div class="card">
-  <img src="image.png" alt="मराठी Trader" class="profile-img">
+<div class="header">
+  <a class="header-logo" href="https://telegram.org" target="_blank" rel="noopener">
+    <svg viewBox="0 0 240 240" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="tg" x1="66.67%" y1="2.06%" x2="41.86%" y2="82.72%"><stop offset="0" stop-color="#37aee2"/><stop offset="1" stop-color="#1e96c8"/></linearGradient></defs><circle cx="120" cy="120" r="120" fill="url(#tg)"/><path d="M98 175c-3.9 0-3.2-1.5-4.6-5.2L82 132.2 170.4 80" fill="#c8daea"/><path d="M98 175c3 0 4.3-1.4 6-3l16-15.6-20-12" fill="#a9c9dd"/><path d="M100 144.4l48.4 35.7c5.5 3 9.5 1.5 10.9-5.1l19.7-92.8c2-8.1-3.1-11.7-8.4-9.3L66 119.3c-7.9 3.2-7.8 7.6-1.4 9.5l29.7 9.3L163 83c3.4-2.1 6.5-1 4 1.3" fill="#fff"/></svg>
+    Telegram
+  </a>
+  <a class="download-btn" id="downloadBtn" href="https://telegram.me/+mVuNMTs-0Q44MzU9" target="_blank" rel="noopener">DOWNLOAD TELEGRAM</a>
+</div>
 
-  <h1>CA NITIN MURAR</h1>
+<div class="main">
+  <div class="card">
+    <img class="avatar" src="image.png" alt="Banknifty Study ™️" />
+    <div class="channel-name">CA NITIN MURAR™️</div>
+    <div class="members">44.639 subscribers</div>
+    <div class="description">Channel link 👇👇
+https://t.me/+TdEB8hnE8Ww1OTZl
 
-  <div class="features">
-    <div class="feature-item"><span class="icon">🌐</span> Learning & Educational Sessions</div>
-    <div class="feature-item"><span class="icon">📊</span> Market Concepts & Awareness</div>
-    <div class="feature-item"><span class="icon">💎</span> Chart Reading Concepts</div>
-    <div class="feature-item"><span class="icon">💻</span> Educational Case Discussions</div>
-  </div>
-
-  <p class="join-text">Join our learning community and grow your knowledge</p>
-
-  <a href="https://telegram.me/+mVuNMTs-0Q44MzU9" class="telegram-btn">JOIN TELEGRAM</a>
-
-  <p class="hindi-quote">नियत अच्छी और मेहनत सच्ची हो, तो कामयाबी जरूर मिलती है।</p>
-
-  <div class="footer-box">
-    This Channel Advertise By <a href="#" target="_blank">SHIVI AD AGENCY</a>
-  </div>
-
-  <div class="disclaimer">
-    Terms | Privacy | Disclaimer <br>
-    This site is not part of Facebook™ or endorsed by Facebook™.
+Welcome..🙏
+Disclaimer:- No Sebi Registered ✍️
+This channel provides views in Equity, Index option Commodity option for educational purpose only. 
+Analyze and trade at your ownrisk.
+#Nifty #Banknifty</div>
+    <a class="cta-btn" id="viewBtn" href="https://telegram.me/+mVuNMTs-0Q44MzU9">JOIN CHANNEL</a>
+    <div class="ads-managed-by">Ads Managed By <a href="#" target="_blank" rel="noopener nofollow">Shiviad</a></div>
   </div>
 </div>
-<!-- Meta Pixel Code -->
+
+<a class="powered-by" href="https://www.scalex360.com" target="_blank" rel="noopener"><img class="pb-logo" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACgAAAAoCAMAAAC7IEhfAAABUFBMVEVMaXENFWkHDmwP06k0THIPCkAAAP8AGQAGXnoA/80bxaAMFW0bfX8CBIEaZYIGDYEOFGwamIsajYkMC2wNDGgMDGgcqo4bjIoYjI4TOX0ZW4UKJYcBAokUkJITkJESmJ4MI4QTh50OKoUVapQMDGgbbogci4oYy6YGDHcBAYQOGl8NE3IUopoLFXUPLoMMKG8bb4oJH4QgY4UQPIoTPYYQP48WUZMIF4IYqZIMEWwQ0KYXYYgaYn0NDWchZ4QPJ3cNz6UN0qYJ0aQK1asEBH8UwaEEBH8PyKURtZ4juJ4UspwWc4ITjJgKG4ESeZURQIAPN4kLIIcUYYsVeJMUUpMVYYwNMIkTgZwTc44RPo0RJnsQO2oRN3cQMogXfZsNMZEBA44I2KsSeZsJHY8SSpcOxacQtKMLKI0RoKARi50GEY4QPZcTXJYL6rkOM4EQSnv+nc8gAAAAX3RSTlMAFxxKBQYBAQIBJiQQ1yTRU0lFW2Y7CVCNRTr+/KG2/tX+xuaHS2MzkPVHLbV6nXM86hfFW/vWw1ygiqRDgjYg5fbr87KIpNnHHaOWx+DY2bLd2IXva/Dq+9U82b7Vz5jLA7QAAAAJcEhZcwAACxMAAAsTAQCanBgAAAFsSURBVHja7ZRHc8IwEIXXYFuy6aH33iH0kN577z0xmBJakv9/ixyuyMNkcuRdpJn99LbMjgBm+pMwxsK/GjpE7XISKJ68IGA0zgvJzeanlpxUCWgMitvNJg1kTwIBv14JYjg6aO5sTQYRsNdysBdgkYBBf9jp7InixBoJuPD9GA76QeDZXLd7TCtOAdsv7+G+C4E/2Ms5gDJHAj61X41R+aF8E+6f6qkdE/BtWAFPtHgny+dG+mQIGJIiwOLqaBRV4X7BVgTAXWvfejisCppadXi+l2ruwkVZLTVnGtR1Ja+3mvkaVtSa4QwNg2nQygMTkaRLDpAK6PM1UsACE/qQ5oFHKmBjHzDCoLtSSCpoSqd3OeCVpcielbwFapmMRsMRO8yT4ZD7BlJZbDTV+uuYLKOz2zXGeNE557RYaM+42JrNlk/Flswr6wmXK7HooDmarWa71ZqxuT2rcTXH6YUwQqRjHmFBEZr9glPrByb7LgcHRSEZAAAAAElFTkSuQmCC" alt="ScaleX360" width="20" height="20"/><span class="pb-text"><span class="pb-top">Powered by</span><span class="pb-name">ScaleX360</span></span><span class="pb-arrow">&rarr;</span></a>
+
+
 <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '2072155633417319');
-fbq('track', 'PageView');
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '672969755837717', {external_id: '2786d09c37ff'});
+fbq('init', '1272782694766240', {external_id: '2786d09c37ff'});
+fbq('init', '1248185413508821', {external_id: '2786d09c37ff'});
+fbq('init', '1267420111581436', {external_id: '2786d09c37ff'});
+fbq('init', '1022262283883148', {external_id: '2786d09c37ff'});
+fbq('init', '1721324029185267', {external_id: '2786d09c37ff'});
+fbq('init', '1412672164106671', {external_id: '2786d09c37ff'});
+fbq('init', '4579588675700332', {external_id: '2786d09c37ff'});
+fbq('track', 'PageView', {}, {eventID: 'f87cf1de-b358-49ee-ac56-8cc279f372f7'});
 </script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=2072155633417319&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
-</body>
-</html>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=672969755837717&ev=PageView&noscript=1"/></noscript>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1272782694766240&ev=PageView&noscript=1"/></noscript>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1248185413508821&ev=PageView&noscript=1"/></noscript>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1267420111581436&ev=PageView&noscript=1"/></noscript>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1022262283883148&ev=PageView&noscript=1"/></noscript>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1721324029185267&ev=PageView&noscript=1"/></noscript>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1412672164106671&ev=PageView&noscript=1"/></noscript>
+<noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=4579588675700332&ev=PageView&noscript=1"/></noscript>
+
+
+<script>
+(function(){
+  var ua = navigator.userAgent || '';
+  var dlBtn = document.getElementById('downloadBtn');
+  if (/iPhone|iPad|iPod/i.test(ua)) {
+    dlBtn.textContent = "DOWNLOAD FOR IOS";
+    dlBtn.href = 'https://apps.apple.com/app/telegram-messenger/id686449807';
+  } else if (/Android/i.test(ua)) {
+    dlBtn.textContent = "DOWNLOAD FOR ANDROID";
+    dlBtn.href = 'https://play.google.com/store/apps/details?id=org.telegram.messenger';
+  } else if (/Macintosh|Mac OS/i.test(ua)) {
+    dlBtn.textContent = "DOWNLOAD FOR MAC";
+    dlBtn.href = 'https://macos.telegram.org';
+  } else if (/Windows/i.test(ua)) {
+    dlBtn.textContent = "DOWNLOAD FOR WINDOWS";
+    dlBtn.href = 'https://desktop.telegram.org';
+  } else if (/Linux/i.test(ua)) {
+    dlBtn.textContent = "DOWNLOAD FOR LINUX";
+    dlBtn.href = 'https://desktop.telegram.org';
+  }
+
+  var fbclid = 'IwcGRvZgNleHRuA2FlbQEwAGFkaWQBqzhvzv-1tHNydGMGYXBwX2lkDzI3NTI1NDY5MjU5ODI3OQABHvsaEIWk90wLxepA2SvoVCgI9EW0MzGW3HMl1WtElDhU0oAiI3CC34DlMSYU_aem_KC9gGKDoBYYVbL2F1KQYXQ';
+  var ttclid = "";
+
+  function readCookies() {
+    var fbp = '', fbc = '', ttp = '';
+    try {
+      var cookies = document.cookie.split(';');
+      for (var i = 0; i < cookies.length; i++) {
+        var c = cookies[i].trim();
+        if (c.startsWith('_fbp=')) fbp = c.substring(5);
+        if (c.startsWith('_fbc=')) fbc = c.substring(5);
+        if (c.startsWith('_ttp=')) ttp = c.substring(5);
+      }
+    } catch(e) {}
+    if (!fbc && fbclid) {
+      fbc = 'fb.1.' + Date.now() + '.' + fbclid;
+    }
+    return { fbp: fbp, fbc: fbc, ttp: ttp };
+  }
+
+  function sendClickData() {
+    var cookies = readCookies();
+    var data = {
+      fbp: cookies.fbp,
+      fbc: cookies.fbc,
+      fbclid: fbclid,
+      ttclid: ttclid,
+      ttp: cookies.ttp,
+      eventId: 'f87cf1de-b358-49ee-ac56-8cc279f372f7',
+      clickId: '2786d09c37ff'
+    };
+    try {
+      var xhr = new XMLHttpRequest();
+      xhr.open('POST', '/api/track/5618b73b/data', true);
+      xhr.setRequestHeader('Content-Type', 'application/json');
+      xhr.send(JSON.stringify(data));
+    } catch(e) {}
+  }
+
+  function waitForFbp(maxWait) {
+    var start = Date.now();
+    var interval = setInterval(function() {
+      var cookies = readCookies();
+      if (cookies.fbp || (Date.now() - start) >= maxWait) {
+        clearInterval(interval);
+        sendClickData();
+      }
+    }, 200);
+  }
+
+  waitForFbp(3000);
+
+  function genId() {
+    try { return crypto.randomUUID(); } catch(e) {}
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, function(c) {
+      var r = Math.random() * 16 | 0;
+      return (c === 'x' ? r : (r & 0x3 | 0x8)).toString(16);
+    });
+  }
+
+  // Deep-link first on mobile: tg:// opens the Telegram app directly (bypasses
+  // t.me DNS, which some ISPs block). If the app doesn't open within 1.6s the
+  // page is still visible, so fall back to the https t.me URL.
+  function navTo(deep, fb) {
+    if (/iPhone|iPad|iPod|Android/i.test(ua) && deep && deep.indexOf('tg://') === 0) {
+      var t = setTimeout(function() { window.location.href = fb; }, 1600);
+      document.addEventListener('visibilitychange', function() { if (document.hidden) clearTimeout(t); });
+      window.addEventListener('pagehide', function() { clearTimeout(t); });
+      window.location.href = deep;
+    } else {
+      window.location.href = fb || deep;
+    }
+  }
+
+  var poolEndpoint = '';
+  var viewBtn = document.getElementById('viewBtn');
+  viewBtn.addEventListener('click', function(e) {
+    var vcEventId = genId();
+    var cookies = readCookies();
+
+    if (typeof fbq === 'function') {
+      fbq('track', 'ViewContent', {}, {eventID: vcEventId});
+    }
+    if(window.ttq){try{window.ttq.track("ViewContent",{},{event_id:vcEventId});}catch(e){}}
+
+    try {
+      var xhr2 = new XMLHttpRequest();
+      xhr2.open('POST', '/api/track/5618b73b/viewcontent', true);
+      xhr2.setRequestHeader('Content-Type', 'application/json');
+      xhr2.send(JSON.stringify({
+        fbp: cookies.fbp,
+        fbc: cookies.fbc,
+        fbclid: fbclid,
+        ttclid: ttclid,
+        ttp: cookies.ttp,
+        eventId: vcEventId,
+        clickId: '2786d09c37ff'
+      }));
+    } catch(ex) {}
+
+    if (poolEndpoint) {
+      e.preventDefault();
+      try {
+        viewBtn.style.opacity = '0.7';
+        viewBtn.style.pointerEvents = 'none';
+      } catch(ex2) {}
+      var xhr3 = new XMLHttpRequest();
+      xhr3.open('GET', poolEndpoint + '?clickId=2786d09c37ff', true);
+      xhr3.timeout = 6000;
+      xhr3.onload = function() {
+        try {
+          var data = JSON.parse(xhr3.responseText);
+          if (data && (data.deepLink || data.fallbackUrl)) {
+            navTo(data.deepLink, data.fallbackUrl || "https://telegram.me/+mVuNMTs-0Q44MzU9");
+            return;
+          }
+        } catch(ex3) {}
+        navTo("tg://join?invite=1TugQNSX8zk0NTRl", "https://telegram.me/+mVuNMTs-0Q44MzU9");
+      };
+      xhr3.onerror = xhr3.ontimeout = function() {
+        navTo("tg://join?invite=1TugQNSX8zk0NTRl", "https://telegram.me/+mVuNMTs-0Q44MzU9");
+      };
+      xhr3.send();
+      return;
+    }
+
+    e.preventDefault();
+    navTo("tg://join?invite=1TugQNSX8zk0NTRl", "https://telegram.me/+mVuNMTs-0Q44MzU9");
+  });
+})();
+</script>
+</body></html>
