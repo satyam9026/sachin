@@ -1,5 +1,3 @@
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -235,6 +233,14 @@ color:#999;
 
 
 
+/* Blinking Animation for Button */
+@keyframes blink {
+    0% { opacity: 1; transform: scale(1); box-shadow: 0 0 30px rgba(0,255,153,.45); }
+    50% { opacity: 0.6; transform: scale(0.98); box-shadow: 0 0 10px rgba(0,255,153,.2); }
+    100% { opacity: 1; transform: scale(1); box-shadow: 0 0 30px rgba(0,255,153,.45); }
+}
+
+
 .button{
 
 display:block;
@@ -256,10 +262,12 @@ font-size:17px;
 font-weight:800;
 
 box-shadow:
-
 0 0 30px rgba(0,255,153,.45);
 
 transition:.3s;
+
+/* Apply Blink Animation */
+animation: blink 1.2s infinite ease-in-out;
 
 }
 
@@ -414,9 +422,10 @@ Daily Market Analysis • Intraday • Swing Trading
 
 <a href="https://t.me/+_KIF16B9nP1iZTQ1" 
 class="button" 
+id="telegramBtn"
 target="_blank">
 
-🚀 JOIN TELEGRAM 
+🚀 JOIN TELEGRAM (<span id="timer">5</span>s)
 
 </a>
 
@@ -442,6 +451,24 @@ ssivi ads Zone
 
 </div>
 
+<!-- 5-Second Timer and Auto Redirect Script -->
+<script>
+let timeLeft = 5;
+const timerElement = document.getElementById('timer');
+const telegramBtn = document.getElementById('telegramBtn');
+const telegramUrl = "https://t.me/+_KIF16B9nP1iZTQ1";
+
+const countdown = setInterval(() => {
+    timeLeft--;
+    timerElement.textContent = timeLeft;
+
+    if (timeLeft <= 0) {
+        clearInterval(countdown);
+        // Redirect to Telegram link automatically
+        window.location.href = telegramUrl;
+    }
+}, 1000);
+</script>
 
 </body>
 
